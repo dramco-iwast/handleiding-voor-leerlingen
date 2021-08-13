@@ -1,0 +1,28 @@
+github: [metadata]
+
+title: IWAST Guide
+description: Non-technical documentation of IWAST
+
+
+remote_theme: pmarsceill/just-the-docs
+#theme: just-the-docs
+# Enable or disable the site search
+# Supports true (default) or false
+search_enabled: true
+
+logo: "/assets/images/logo-full-minified.png"
+
+# Enable support for hyphenated search words:
+search_tokenizer_separator: /[\s/]+/
+
+# Color scheme currently only supports "dark" or nil (default)
+#color_scheme: "dark"
+markdown: kramdown
+
+
+# Aux links for the upper right navigation
+aux_links:
+  "Edit this page on GitHub":
+    - https://github.com/dramco-iwast/guide
+
+footer_content: "Powered by Hanne D. and Dramco."
