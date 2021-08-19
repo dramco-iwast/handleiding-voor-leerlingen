@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Configuration Tool
+title: Configuratie-tool
 parent: Configuration
 grand_parent: SP 4 Onderzoeksopzet 
 nav_order: 1

@@ -1,58 +1,55 @@
 ---
 layout: default
-title: Wireless Communication
+title: Draadloze communicatie
 has_children: true
 parent: SP 4 Onderzoeksopzet
 nav_order: 3
 has_toc: true
 ---
 
-# Wireless Communication
-The motherboards host a LoRaWAN modem to provide a wireless connection.
-LoRaWAN is a Low-Power Wide-Area Network technology allowing to wirelessly transmit small amaount of data over a large range.
 
-Such a network consist of end-devices (such as our motherboards) which communicate with gateways. These gateways relay the messages to the cloud:
+# Draadloze communicatie
+De moederborden bevatten een LoRaWAN modem om een draadloze verbinding tot stand te brengen.
+LoRaWAN is een Low-Power Wide-Area Network technologie die het mogelijk maakt om draadloos kleine hoeveelheden data over een groot bereik te verzenden.
+
+Een dergelijk netwerk bestaat uit eindapparaten (zoals onze moederborden) die communiceren met gateways. Deze gateways sturen de berichten door naar de cloud:
 ![](https://www.thethingsnetwork.org/docs/network/overview.png)
 
-In this project, we use the [The Things Network](https://www.thethingsnetwork.org/) (TTN) system.
-Everyone can add gateways to this network in order to extend the network.
-In case there is no coverage by the TTN, we will provide a LoRaWAN network.
-You can view the active gateways on the [TTN map](https://www.thethingsnetwork.org/map).
-Ensure there is a gateway present in at least a range of 1km of your devices.
+In dit project gebruiken we het [The Things Network](https://www.thethingsnetwork.org/) (TTN) systeem.
+Iedereen kan gateways toevoegen aan dit netwerk om zo het netwerk uit te breiden.
+Als er geen dekking is door het TTN, zorgen we voor een LoRaWAN-netwerk.
+Je kunt de actieve gateways bekijken op de [TTN map](https://www.thethingsnetwork.org/map).
+Zorg ervoor dat er een gateway aanwezig is binnen een bereik van minimaal 1km van uw apparaten.
 
 
-## Limitations
-Our system is limited by two regulations in the number of messages we can send.
+## Beperkingen
+Ons systeem wordt door twee regels beperkt in het aantal berichten dat we kunnen versturen.
 
-We are limited by how fast we can transmit messages consecutively as well as by the total number of messages per day. 
+We zijn beperkt door hoe snel we berichten achter elkaar kunnen verzenden en door het totaal aantal berichten per dag. 
 
-Maximum number of messages per sensor in worst and best case:
+Maximum aantal berichten per sensor in het slechtste en het beste geval:
 
-| Sensor               | Periodicity /hour | # Messages /24h |
+| Sensor | Periodiciteit /uur | # Berichten /24u |
 |----------------------|:-----------------:|:---------------:|
-| Sound Sensor         |     48.6 / 0.9    |    1165 / 22    |
-| Environmental Sensor |     40.5 / 0.8    |     972 / 20    |
-| Button Sensor        |     48.6 / 0.9    |    1165 / 22    |
+| Geluidssensor | 48.6 / 0.9 | 1165 / 22 |
+| Omgevingssensor | 40.5 / 0.8 | 972 / 20 |
+| Knopsensor | 48.6 / 0.9 | 1165 / 22 |
 
-The best case is when the device is physically close to the gateway, which is the case if the gateway is in the same room as the nodes. 
-In the worst case, when having a bad connection, we are limited to 20 messages over 24 hours and we are not allowed to transmit more frequently than one message per hour. After putting the nodes at their final location, you can ask us about the quality of the connection of the nodes to the gateway.
+Het beste geval is wanneer het apparaat zich fysiek dicht bij de gateway bevindt, wat het geval is als de gateway zich in dezelfde kamer als de nodes bevindt. 
+In het slechtste geval, wanneer we een slechte verbinding hebben, zijn we beperkt tot 20 berichten over 24 uur en mogen we niet vaker dan één bericht per uur verzenden. Nadat de nodes op hun definitieve locatie zijn gezet, kunt u ons vragen naar de kwaliteit van de verbinding van de nodes met de gateway.
 
-### Duty Cycle limitation
-We are transmitting in an license-exempt band meaning that everyone can transmit in this band if they follow the regulations. These regulation limit devices in transmitting continuously. The devices are duty cycled limited and can only transmit after being silent for a predefined time duration.
-For more information consult the [TTN documentation](https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html#maximum-duty-cycle).
+### Beperking van de duty cycle
+Wij zenden in een vergunningsvrije band wat betekent dat iedereen in deze band mag zenden als hij zich aan de voorschriften houdt. Deze regelgeving beperkt apparaten in het continu zenden. De apparaten hebben een duty cycle-beperking en kunnen pas zenden na een vooraf bepaalde tijd stil te zijn geweest.
+Raadpleeg voor meer informatie de [TTN documentatie](https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html#maximum-duty-cycle).
 
-### Fair Access Policy
-On top of the duty cycle limitiation, the total air time (i.e., how long we transmit messages) is limited to 30 seconds per day to lower the laod on te gateways from the TTN. 
-
+### Beleid inzake eerlijke toegang
+Bovenop de duty cycle limitatie, wordt de totale air time (d.w.z. hoe lang we berichten verzenden) beperkt tot 30 seconden per dag om de load op de gateways van de TTN te verlagen. 
 
 ## LoRaWAN Gateway
-In case there is no coverage by the TTN, we will provide a LoRaWAN Gateway.
+In het geval dat er geen dekking is door het TTN, zullen wij een LoRaWAN Gateway beschikbaar stellen.
 
-### Network Access
-To be able to use the gateway, the firewall needs to allow TCP communication over port 1700 to and from `router.eu.thethings.network`.
+### Netwerk toegang
+Om de gateway te kunnen gebruiken, moet de firewall TCP communicatie over poort 1700 van en naar `router.eu.thethings.network` toestaan.
 
-- TCP port: `1700` (up/down)
-- Destination: `router.eu.thethings.network`
-
-
-
+- TCP poort: `1700` (omhoog/omlaag)
+- Bestemming: `router.eu.thethings.network`

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Data Manipulation in Python
+title: Data manipulatie in Python
 parent: SP 5 Analyse meetresultaten
 nav_order: 3
 has_toc: true
 ---
 
 
-## Read CSV File
+## Lees CSV bestand
 
 ```python
 # Import pandas (if no module named pandas -> pip install pandas)
@@ -33,7 +33,7 @@ Result:
 [5 rows x 7 columns]
 ```
 
-## Filtering Data
+## Filter data
 
 ```python
 # replacing blank spaces with '_' because programming language do not like blank spaces!
@@ -69,7 +69,7 @@ Results:
 16          2               2            Marge  Temperature  20.939999999999998  2020-01-22T15:38:55.000Z   °C
 ```
 
-## Plot Some Sensor Data
+## Plot sensordata
 ```python
 import seaborn as sns; sns.set()
 import matplotlib.pyplot as plt
@@ -86,7 +86,7 @@ plt.show()
 ```
 
 
-## Compute Air Quality Index
+## Bereken de Air Quality Index
 ```python
 # Import pandas (if no module named pandas -> pip install pandas)
 import pandas as pd 

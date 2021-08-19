@@ -9,10 +9,10 @@ has_toc: true
 
 # Platform
 
-All sensor data can be viewed at [our platform](https://dramco.be/projects/iwast/platform).
-Login with your `session ID`. 
+Alle sensor data kan bekeken worden op [ons platform](https://dramco.be/projects/iwast/platform).
+Log in met je `sessie ID`. 
 
-If you just want a demo, you can login with the ID `bart-gets-an-f`. 
+Als je alleen een demo wilt, kun je inloggen met de ID `bart-gets-an-f`. 
 
 
 

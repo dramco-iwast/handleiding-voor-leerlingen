@@ -1,17 +1,17 @@
 ---
 layout: default
-title: What is polling?
+title: Periodieke communicatie
 parent: Configuration
 grand_parent: SP 4 Onderzoeksopzet
 nav_order: 2
 ---
 
-# Periodic-based communication
+# Periodieke communicatie
 
-Some sensors can be polled.
-This means that the motherboard periodically requests the current status of the sensor.
-The periodicity can be configured with the configuration tool.
-In order to reduce the power consumption of the IoT system, we suggest using a threshold-based communication over periodic-based communication.
-The fastest you can poll your sensor is every five minutes.
+Sommige sensoren kunnen polled worden.
+Dit betekent dat het moederbord periodiek naar de actuele status van de sensor vraagt.
+De periodiciteit kan worden geconfigureerd met de configuratietool.
+Om het stroomverbruik van het IoT-systeem te verminderen, stellen we voor om een drempel-gebaseerde communicatie te gebruiken in plaats van een periodiek-gebaseerde communicatie.
+Het snelste dat je een sensor kan pollen is elke vijf minuten.
 
-A polling interval of 0 indicates that polling is disabled, and therefore that only thresholding is used to determine when to transmit data.
+Een polling interval van 0 geeft aan dat polling is uitgeschakeld, en dat dus alleen drempelwaarde wordt gebruikt om te bepalen wanneer gegevens moeten worden verzonden.

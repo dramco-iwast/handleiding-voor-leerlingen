@@ -1,52 +1,51 @@
 ---
 layout: default
-title: What are thresholds?
+title: Communicatie o.b.v. drempelwaarden
 parent: Configuration
 grand_parent: SP 4 Onderzoeksopzet 
 nav_order: 3
 ---
 
-# Threshold-based communication
+# Drempelwaarde-gebaseerde communicatie
 
-Some sensors are able to generate an interupt when a certain metric value is exceeded.
-When enabled, you will receive an update of the metric value if the threshold is exceeded.
+Sommige sensoren zijn in staat om een interupt te genereren wanneer een bepaalde meetwaarde (drempel, E: threshold) wordt overschreden.
+Indien ingeschakeld, zal u een update van de gemeten sensorwaarde ontvangen indien de drempel overschreden wordt.
 
-We allow to define two thresholds, i.e., threshold low and threshold high: 
-* When a metric value exceeds the `threshold high (TH)` an interrupt is generated.
-* When a metric value goes below `threshold low (TL)` an interrupt is generated.
-This allow us to get updates in three distinct manners.
+Het is mogelijk om twee drempelwaarden te definiëren, d.w.z. lage drempelwaarde en hoge drempelwaarde: 
+* Wanneer een meetwaarde boven de `threshold high (TH)` komt wordt er een interrupt gegenereerd.
+* Wanneer een meetwaarde onder de `threshold low (TL)` komt wordt er een interrupt gegenereerd.
+Dit stelt ons in staat om updates te krijgen op drie verschillende manieren.
 
-In all cases an interrupt is generated when the metric value exceeds `TH` or when is falls below `TL`. 
-When playing with the `TH` and `TL` configuration we can manipulate when we want an update.
+In alle gevallen wordt een interrupt gegenereerd wanneer de metric waarde `TH` overschrijdt of wanneer deze onder `TL` komt. 
+Door te spelen met de `TH` en `TL` configuratie kunnen we manipuleren wanneer we een update willen.
 
-In the figure below, dashed horizontal lines indicate when sensor data is transmitted to the gateway.
+In de onderstaande figuur geven de gestippelde horizontale lijnen aan wanneer sensor data naar de gateway wordt gestuurd.
 
 ![](../assets/images/tl-th-thresholds.svg)
 
-We describe the situations shown in the figure above:
+We beschrijven de situaties die in de bovenstaande figuur zijn weergegeven:
 
-1. Top figure: If we are interested to be notified when a value is higher than `TH` or lower than `TL`, we define: `TH` with a higher value as `TL`.
-For example: if we want to get sensor data when a sound level exceeds 100 dB or when it is lower dan 80 dB, we set `TH=100` and `TL=80`.
+1. Bovenste figuur: Als we geïnteresseerd zijn om een melding te krijgen wanneer een waarde hoger is dan `TH` of lager dan `TL`, definiëren we: `TH` met een hogere waarde dan `TL`.
+Bijvoorbeeld: als we sensor data willen krijgen wanneer een geluidsniveau hoger is dan 100 dB of wanneer het lager is dan 80 dB, dan stellen we `TH=100` in en `TL=80`.
 
-2. Middle figure: If we are interested when a value enters the area between `TH` and `TL`,  `TL` has a higher value than `TH`.
-For example: if we want to get sensor data when a sound level is between 80 and 100 dB, we set `TH=80` and `TL=100`.
+2. Middelste figuur: Als we geïnteresseerd zijn wanneer een waarde in het gebied tussen `TH` en `TL` komt, heeft `TL` een hogere waarde dan `TH`.
+Bijvoorbeeld: als we sensorgegevens willen krijgen wanneer een geluidsniveau tussen 80 en 100 dB ligt, stellen we `TH=80` en `TL=100` in.
 
-3. Bottom figure: If we want to know when a metric value crosses a specific value, we can define `TH` equal to `TL`.
-For example: if we want to get sensor data when a sound level crosses 85 dB, regardless if the sound level was higher or lower before, we set `TH=85` and `TL=85`.
+3. Onderste figuur: Als we willen weten wanneer een metrische waarde een bepaalde waarde overschrijdt, kunnen we `TH` gelijk aan `TL` definiëren.
+Bijvoorbeeld: als we sensor data willen krijgen wanneer een geluidsniveau 85 dB overschrijdt, ongeacht of het geluidsniveau daarvoor hoger of lager was, dan stellen we `TH=85` en `TL=85` in.
 
-In the table below you can find the minimum and maximum values `TL` and `TH` can take, for each physical quantity and each sensor.
+In de tabel hieronder vindt u de minimum en maximum waarden die `TL` en `TH` kunnen hebben, voor elke fysieke grootheid en elke sensor.
 
-| Sensor type   | Physical quantity     | minimum | maximum |
+| Sensor type | Fysieke hoeveelheid | minimum | maximum |
 | ------------- |:-------------:|:-------------:|:-------------:| 
-| Sound level sensor     | Sound level (dB) | 65 | 120 |
-| Environmental sensor      | Temperature (&deg;C)  | -40  | 100 |
-| Environmental sensor      | Air pressure (hPa)  | 0  |	65000 |
-| Environmental sensor      |  Humidity (%) | 0  | 100	|
-| Environmental sensor      | Air quality (no unit)  | 0  |	600 |
-| Button sensor | - (no thresholding)  |  - (no thresholding) | - (no thresholding) |
-| Light sensor      | Illuminance (lux) | 0  |	65535 |
-| Power      | Battery voltage (V) | 0  |	4.20 |
+| Geluidsniveau sensor | Geluidsniveau (dB) | 65 | 120 |
+| Omgevingssensor | Temperatuur (&deg;C) | -40 | 100 |
+| Omgevingssensor | Luchtdruk (hPa) | 0 | 65000 |
+| Milieusensor | Vochtigheid (%) | 0 | 100 |
+| Milieusensor | Luchtkwaliteit (geen eenheid) 0 600
+| Knopsensor | - (geen drempel) | - (geen drempel) | - (geen drempel) |
+| Lichtsensor | Verlichtingssterkte (lux) | 0 | 65535 |
+| Stroom | Batterijspanning (V) | 0 | 4.20 |
 
-Pay attention! Due to the manner in which sound levels are calculated, the measured sound level is always at least 50 dB. 
-Therefore it does not make sense to try to measure 'quiet' sounds.
-It is also not allowed to set thresholds lower than 65 dB, as this will lead to constant data transmission, which consume a lot of power and will drain the battery.
+__Pas op!__ Door de manier waarop geluidsniveaus worden berekend, is het gemeten geluidsniveau altijd ten minste 50 dB. Daarom heeft het geen zin om te proberen 'stille' geluiden te meten.
+Het is ook niet toegestaan om drempels lager dan 65 dB in te stellen, omdat dit zal leiden tot constante datatransmissie, wat veel stroom verbruikt en de batterij leeg zal trekken.
