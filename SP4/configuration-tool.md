@@ -15,11 +15,12 @@ Hieronder zie je een screenshot van de configuratie-tool. Voer de aangeduide sta
 
 * De aangesloten USB apparaten zie je rechtsboven (a).
 Sluit het moederbord, samen met de sensoren die je wilt configureren via USB aan je computer aan. 
-Druk op de grote ronde 'reset' knop op het moederbord.
+__Druk op de grote ronde 'reset' knop op het moederbord.__
 
 * Vernieuw indien nodig het lijstje van USB apparaten door op 'refresh' te drukken (b).
 Als je net het moederbord hebt aangesloten, zie je in het lijstje van USB apparaten nu wellicht een nieuwe COM-poort verschijnen. 
 Dit is het nummer van de USB-poort waarop je je moederbord hebt aangesloten.
+__Indien je de nieuwe COM-poort niet ziet verschijnen, heb je wellicht niet op de grote ronde 'reset' knop geduwd. Sluit het moederbord opnieuw aan door de USB-kabel uit te trekken en opnieuw in de USB-poort te steken en druk op de grote ronde 'reset' knop op het moederbord.__
 
 * Selecteer het USB apparaat naar keuze (de COM-poort waarop je moederbord is aangesloten) en druk op connect (c).
 

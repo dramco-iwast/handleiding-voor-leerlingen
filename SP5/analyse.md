@@ -8,9 +8,6 @@ has_toc: true
 
 # Analyse meetresultaten
 
-\[_Noot aan leerkrachten: we geven hier enkele handvaten, maar we raden je aan zelf na te denken welke analyses je precies van je leerlingen verwacht en in welke omgeving ze die moeten uitvoeren.
-Indien gewenst kan je contact opnemen met iwast@kuleuven.be voor ondersteuning bij selectie en/of uitvoering van de analyses._\]
-
 Normaal gezien heb je nu bepaald waar je je sensoren zal plaatsen en wanneer ze hun meetgegevens naar de cloud moeten doorsturen. Nu is het moment aangebroken om na te denken wat je met deze
 meetgegevens zal gaan doen.
 

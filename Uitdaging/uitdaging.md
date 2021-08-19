@@ -1,8 +1,13 @@
 ---
 layout: default
-title: Start uitdaging
+title: Overzicht
 nav_order: 2
 ---
+
+# Start uitdaging
+
+
+
 # Uitdaging
 Het internet verbindt ons, mensen, met elkaar en laat ons toe met elkaar te communiceren, eenvoudig informatie te raadplegen, enz. Het Internet der Dingen is een uitbreiding op dit internet dat we allen kennen.
 In plaats van _mensen_, verbindt het Internet der Dingen verbindt _dingen_ met elkaar en met het internet. Het Internet der Dingen maakt domme dingen _smart_ door alledaagse dingen te verbinden met het internet. 
@@ -22,9 +27,6 @@ Nu je een beetje besef hebt van wat het Internet der Dingen is (wat verderop nog
 __Breng een maatschappelijk of ecologisch relevant probleem in je schoolomgeving in kaart of los het op a.d.h.v. IoT technologie.__
 
 # Aanpak
-
-\[_Noot voor leerkrachten: we geven hier enkele handvaten, maar we raden je aan zelf na te denken hoe je jouw leerlingengroep best laat nadenken over welke stappen 
-binnen dit project zullen moeten worden doorlopen._\]
 
 Je zal dit project aanpakken in verschillende subproblemen. 
 

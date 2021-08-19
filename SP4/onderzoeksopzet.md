@@ -8,8 +8,6 @@ has_toc: true
 
 # Onderzoeksopzet/protocol:
 
-\[_Noot aan leerkrachten: we geven hier enkele handvaten, maar we raden je aan zelf na te denken hoe je de uitwerking van het onderzoeksopzet best ondersteunt voor jouw leerlingengroep._\]
-
 We gaan op zoek naar een antwoord op de volgende vraag:
 * Op welke manier moet je de IoT sensoren instellen (met een moeilijker woord: configureren) om je probleemstelling te onderzoeken of op te lossen?
 
