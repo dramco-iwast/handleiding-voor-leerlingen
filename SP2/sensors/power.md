@@ -1,57 +1,57 @@
 ---
 layout: default
-title: Power / Light sensor
+title: Vermogen- / lichtsensor
 parent: Sensoren
 grand_parent: SP 2 Randvoorwaarden IoT systeem
 nav_order: 4
 has_toc: true
 ---
 
-# Power / Light Sensor
+# Vermogen- / Lichtsensor
 
 ![](./../../assets/images/power-sensor.jpg)
 
-The power / light sensor measures the following:
-- Illuminance (lux)
-- Battery voltage (V)
+De vermogen- / lichtsensor meet het volgende:
+- Verlichtingssterkte (lux)
+- Batterijspanning (V)
 
-The power module can be used to provide energy to the whole system. 
-The module is based around a battery which voltage is converted to a stable output voltage.
-It includes a photovoltaic panel with an MPPT algorithm to efficiently extract microwatts to milliwatts of power from the solar panel and recharge the battery.
+De vermogenmodule kan worden gebruikt om het hele systeem van energie te voorzien. 
+De module bestaat uit op een batterij waarvan de spanning wordt omgezet in een stabiele uitgangsspanning.
+De module omvat een fotovoltaïsch paneel met een MPPT-algoritme om op efficiënte wijze microwatts tot milliwatts vermogen uit het zonnepaneel te halen en de batterij op te laden.
 
-## Recharging the battery using USB
-When the battery eventually does run out, it automatically disconnects the battery from the system. 
-The battery can also be recharged via usb. When plugged in via usb, a green and red light turn on. Charging is completed when the red light turns off and only the green light remains on.
+## Opladen van de batterij via USB
+Wanneer de batterij uiteindelijk toch leeg raakt, wordt deze automatisch losgekoppeld van het systeem. 
+De batterij kan ook via USB worden opgeladen. Bij het inpluggen via USB gaan een groen en rood lampje branden. Het opladen is voltooid wanneer het rode lampje uitgaat en alleen het groene lampje blijft branden.
 
-## Measuring incident light
-This module includes an LDR (Light Dependent Resistor) which output is converted to an illuminance value. A measurement is indicated by a blue light.
+## Meten van invallend licht
+Deze module bevat een LDR (Light Dependent Resistor) waarvan de uitgangspanning wordt omgezet in een verlichtingssterkte. Een meting wordt aangegeven door een blauw lampje.
 
-### Illuminance
+### Verlichtingssterkte
 
-Illuminance is a metric for how much the incident light illuminates a certain suface area. 
+Verlichtingssterkte is een maat voor de hoeveelheid invallend licht die een bepaald oppervlak verlicht. 
 
-| Lighting condition | From (lux) | To (lux) | Mean value (lux) |
+| Verlichtingsconditie | Van (lux) | Tot (lux) | Gemiddelde waarde (lux) |
 |--------------------|------------|----------|------------------|
-| Pitch Black        | 0          | 10       | 5                |
-| Very Dark          | 11         | 50       | 30               |
-| Dark Indoors       | 51         | 200      | 125              |
-| Dim Indoors        | 201        | 400      | 300              |
-| Normal Indoors     | 401        | 1000     | 700              |
-| Bright Indoors     | 1001       | 5000     | 3000             |
-| Dim Outdoors       | 5001       | 10,000   | 7500             |
-| Cloudy Outdoors    | 10,001     | 30,000   | 20,000           |
-| Direct Sunlight    | 30,001     | 100,000  | 65,000           |
+| Pikzwart | 0 | 10 |  5 |
+| Zeer donker | 11 | 50 | 30 |
+| Donker Binnenshuis | 51 | 200 | 125 |
+| Donker Binnen | 201 | 400 | 300 |
+| Normaal Binnen | 401 | 1000 | 700 |
+| Lichte Binnenlucht | 1001 | 5000 | 3000 | 
+| Buiten | 5001 | 10.000 | 7500 |
+| Bewolkt Buiten | 10.001 | 30.000 | 20.000 |
+| Direct zonlicht | 30.001 | 100.000 | 65.000 |
 
-## Measuring battery voltage
+## Batterijspanning meten
 
-The power module uses a Lithium Polymer (LiPo) battery than can be used to power the whole system. Due to the chemistry of battery, the voltage is not linearly related to the remaining capacity, but can give a good indication of the state of charge. A measurement is indicated by a blue light.
+De powermodule maakt gebruik van een Lithium Polymeer (LiPo) batterij die kan worden gebruikt om het hele systeem van stroom te voorzien. Door de chemische samenstelling van de batterij is de spanning niet lineair gerelateerd aan de resterende capaciteit, maar de batterijspanning kan wel een goede indicatie geven van de laadtoestand. Een meting wordt aangegeven door een blauw lampje.
 
 
-## Applications
-- Monitoring weather conditions
-	* e.g., signaling when sun is shining - cloudy
-	* e.g., day - night tracking
-- Monitoring energy yield from the solar panel
-	* e.g., how much energy is supplied by the solar panel?
-- Monitoring state of charge
-	* e.g., determining how much longer the system can measure
+## Toepassingen
+- Bewaking van weersomstandigheden
+	* bv. signalering wanneer de zon schijnt / wanneer het bewolkt is
+	* bv. dag - nacht volgen
+- Bewaking van de energieopbrengst van het zonnepaneel
+	* bv. hoeveel energie wordt door het zonnepaneel geleverd?
+- Bewaken van de laadtoestand
+	* bv. bepalen hoeveel langer het systeem kan meten

@@ -7,31 +7,33 @@ nav_order: 1
 has_toc: true
 ---
 
-# Environmental Sensor
+# Omgevingssensor
 
 ![](./../../assets/images/environmental-sensor.jpg)
 
-The environmental sensor measures the following:
-- Temperature (&deg;C)
-- Air pressure (hPa)
-- Relative humidity (%)
-- Air Quality Index (no unit)
+De omgevingssensor meet het volgende:
+- Temperatuur (&deg;C)
+- Luchtdruk (hPa)
+- Relatieve vochtigheid (%)
+- Luchtkwaliteitsindex (geen eenheid)
 
-## Air Quality Index
+## Luchtkwaliteitsindex
 ![](./../../assets/images/air-quality-index.png)
 
-The environmental sensor contains a gas that can measure the amount of volatile organic compounds. Volatile organic compounds (VOCs) consist of a large range of organic substances that are gaseous at room temperatures, for example alcohols and ketones.
-The concentration of gasses is usually expressed in parts-per-million (ppm). When the concentration is 1 ppm, it means that 1 molucule of VOCs is present for every million of air molecules.
+De omgevingssensor bevat een gas dat de hoeveelheid vluchtige organische stoffen kan meten. Vluchtige organische stoffen (VOCs) bestaan uit een groot aantal organische stoffen die bij kamertemperatuur gasvormig zijn, bijvoorbeeld alcoholen en ketonen.
+De concentratie van gassen wordt meestal uitgedrukt in deeltjes per miljoen (ppm). Wanneer de concentratie 1 ppm is, betekent dit dat er 1 molucule VOS aanwezig is voor elk miljoen luchtmoleculen.
 
-Because the amount of VOCs in the air is directly related to local emissions, the VOC concentration is used as an indication of air quality. 
-The air quality index is calculated based on the concentration of volatile organic compouds, temperature and humidity, based on an algorithm.
+Omdat de hoeveelheid VOCs in de lucht rechtstreeks verband houdt met lokale emissies, wordt de VOC-concentratie gebruikt als een indicatie van de luchtkwaliteit. 
+De luchtkwaliteitsindex wordt berekend op basis van de concentratie van vluchtige organische stoffen, de temperatuur en de vochtigheid, aan de hand van een algoritme.
 
-## Applications
-- Monitoring classrooms
-	* e.g., signaling when it is time to ventilate the classrooms
-	* e.g., influence of the orientation of classrooms on temperature
-	* e.g., influence of initiatives such as 'dikke truiendag' on classroom temperature
-- Monitoring the school environment
-	* e.g., is the air in the school environment harmful for students who bike to school?
-- Monitoring plant breeding
-	* e.g., determining optimal temperature and humidity to grow a certain plant
+__Pas op!__ CO_2-concentraties kunnen niet opgemeten worden met deze sensor.
+
+## Toepassingen
+- Monitoring lokalen
+	* bv. signaleren wanneer het tijd is om de klaslokalen te ventileren
+	* bv. invloed van de oriëntatie van klaslokalen op de temperatuur
+	* bv. invloed van initiatieven zoals "dikke truiendag" op de temperatuur in klaslokalen
+- Toezicht op de schoolomgeving
+	* bv. is de lucht in de schoolomgeving schadelijk voor leerlingen die met de fiets naar school gaan?
+- Monitoring van plantenveredeling
+	* bv. bepalen van optimale temperatuur en vochtigheid om een bepaalde plant te laten groeien

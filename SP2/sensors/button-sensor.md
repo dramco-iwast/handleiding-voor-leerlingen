@@ -1,28 +1,27 @@
 ---
 layout: default
-title: Button Sensor
+title: Drukknopsensor
 parent: Sensoren
 grand_parent: SP 2 Randvoorwaarden IoT systeem
 nav_order: 3
 has_toc: true
 ---
 
-# Button Sensor
-
+# Drukknopsensor
 
 ![](./../../assets/images/button-sensor.jpg)
 
-The button sensor contains four buttons.
-Whenever a button is pressed, the motherboard sends a message to the cloud specifying which button was pressed.
+De drukknopsensor bevat vier knoppen.
+Telkens wanneer een knop wordt ingedrukt, stuurt het moederbord een bericht naar de cloud waarin wordt gespecificeerd welke knop werd ingedrukt.
 
-This sensor does not need to be configured.
+Deze sensor hoeft niet te worden geconfigureerd.
 
-__Pay attention!__ In the current system, there is no feedback loop! It is possible to poll and analyse data from sensors, but sending signals to the sensor boards is not (yet) possible! It is a one-way communication: sensor boards can send data to the gateway, but cannot receive any signals or data. (So e.g., opening a door or lighting up a LED whenever a push button is pressed is currently impossible!).
+__Pas op!__ In het huidige systeem is er geen feedback loop! Het is mogelijk om gegevens van sensoren op te vragen en te analyseren, maar het zenden van signalen naar de sensorborden is (nog) niet mogelijk! Het is een eenrichtings communicatie: sensor boards kunnen data naar de gateway sturen, maar kunnen geen signalen of data ontvangen. (Dus b.v. een deur openen of een LED laten oplichten wanneer een drukknop wordt ingedrukt is momenteel onmogelijk!)
 
-## Applications
-- Voting applications
-	* e.g., groups of students vote over the right answer to teacher questions (almost real time)
-	* e.g., monitoring student satisfaction about the food in the school restaurant (not real time)
-- Alarm applications
-	* e.g., in healthcare: calling a nurse with an indication of urgency
-	* e.g., fall detection in the elderly population
+## Toepassingen
+- Stemtoepassingen
+	* bv. groepen leerlingen stemmen over het juiste antwoord op vragen van de leraar (bijna in real time)
+	* bv., monitoren van tevredenheid van leerlingen over het eten in het schoolrestaurant (niet real time)
+- Alarmtoepassingen
+	* bv., in de gezondheidszorg: een verpleegster oproepen met een indicatie van urgentie
+	* bv. valdetectie bij ouderen

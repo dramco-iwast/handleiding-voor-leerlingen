@@ -1,58 +1,58 @@
 ---
 layout: default
-title: Sound Sensor
+title: Geluidsensor
 parent: Sensoren
 grand_parent: SP 2 Randvoorwaarden IoT systeem
 nav_order: 2
 has_toc: true
 ---
 
-# Sound Sensor
+# Geluidsensor
 
 ![](./../../assets/images/sound-sensor.jpg)
 
-This sensor measures the sound level.
-You can measure it at fixed time intervals [polling]((./../../SP5/what-is-polling.html)) and/or transmit the value when
-the level falls below or rises above a [threshold](./../../SP5/what-are-thresholds.html).
+Deze sensor meet het geluidsniveau.
+U kunt het meten op vaste tijdsintervallen [polling]((./../../SP5/what-is-polling.html)) en/of de waarde zenden wanneer het niveau onder of boven een [drempel] komt(./../../SP5/what-are-thresholds.html)).
 
-When in treshold mode, the microphone stays on in a low-power mode and wakes the system every time a sound event is detected. The system calculates the dB value and transmits it to the motherboard. Therefore thresholding is useful to detect when a preset sound level threshold has been exceeded.
+In de drempelmodus (thresholding) blijft de microfoon aan in een spaarstand en wordt het systeem gewekt telkens wanneer een geluidsevent wordt gedetecteerd. Het systeem berekent de dB-waarde en zendt deze naar het moederbord. Daarom is thresholding nuttig om te detecteren wanneer een vooraf ingestelde drempelwaarde voor het geluidsniveau is overschreden.
 
-__Pay attention!__ Due to the limited data rates it is not possible to stream sound. The sensor sends the sound level at regular intervals, or when a preset threshold value has been exceeded.
+__Pas op!__ Vanwege de beperkte datasnelheid is het niet mogelijk geluid te streamen. De sensor zendt het geluidsniveau met regelmatige tussenpozen, of wanneer een vooraf ingestelde drempelwaarde is overschreden.
 
-__Pay attention!__ Due to the manner in which sound levels are calculated, the measured sound level is still about 50 dB. 
-Therefore it does not make sense to try to measure 'quiet' sounds.
-It is also not allowed to set thresholds lower than 65 dB, as this will lead to constant data transmission, which consume a lot of power and will drain the battery. 
-It also makes sense to use rather 'high' thresholds, as thresholding is especially useful to detect when preset high noise levels have been exceeded.
+__Pas op!__ Door de manier waarop de geluidsniveaus worden berekend, bedraagt het gemeten geluidsniveau nog steeds ongeveer 50 dB. 
+Daarom heeft het geen zin om te proberen "stille" geluiden te meten.
+Het is ook niet toegestaan drempels lager dan 65 dB in te stellen, omdat dit zal leiden tot constante datatransmissie, wat veel stroom verbruikt en de batterij leeg zal trekken. 
+Het is ook zinvol om tamelijk 'hoge' drempelwaarden te gebruiken, omdat thresholding vooral nuttig is om te detecteren wanneer vooraf ingestelde hoge geluidsniveaus zijn overschreden.
 
-## Applications:
-- Monitoring sound levels and/or noise polution
-	* e.g., monitoring noise at the playground
-	* e.g., is a local party too loud?
-- Activity detection:
-	* e.g., is someone present in a classroom?
+## Toepassingen:
+- Bewaking van geluidsniveaus en/of 'geluidsvervuiling'
+	* bv. bewaking van geluid op de speelplaats
+	* bv. staat een feestje in de buurt te luid?
+- Detectie van activiteiten:
+	* bv. is er iemand aanwezig in een klaslokaal?
 
-## Technical Information
-\[_Note to teachers: this may be too technical for your pupils_\]
+## Technische informatie
 
-The sound sensor contains a number of components:
+__Pas op!__ Vraag aan je leerkracht of het zinvol is dit stukje tekst door te nemen.
 
-### Microphone
-A Vesper VM1010 is chosen because it is a low power microphone with a good performance. The microphone consumes 87 µA in active mode (measured). There is also a mode-pin to enable sleep-mode which reduces the current to approximately 5µA. To enable the sleep mode, one has to supply a low level voltage to the mode pin and vice versa. The sensitivity of the microphone equals -38 dBV while the frequency response curve is flat for the audible frequencies.
+De geluidssensor bestaat uit een aantal onderdelen:
 
-### High pass filter
-The passive high pass filter has a -3dB-frequency of 100 Hz and removes the DC-offset of 0.8 V supplied by the microphone. Only 1 alternation of the sound wave is taken into account. This reduces the component cost and increases the stability of the circuit.
+### Microfoon
+Er is gekozen voor een Vesper VM1010 omdat dit een microfoon is met een laag stroomverbruik en goede prestaties. De microfoon verbruikt 87 µA in actieve modus (gemeten). Er is ook een mode-pin om de sleep-mode in te schakelen, wat de stroom reduceert tot ongeveer 5µA. Om de slaapstand in te schakelen, moet een laag niveau spanning aan de mode-pin worden toegevoerd en vice versa. De gevoeligheid van de microfoon is -38 dBV terwijl de frequentiekarakteristiek vlak is voor de hoorbare frequenties.
 
-### Amplifier
-An non-inverting amplifier is dimensioned to amplify the signal with 30 dB. A TLV341 is used as operational amplifier because it’s gain bandwidth product of 2.3 MHz is rather high. The quiescent current measures approximately 70 µA per channel.
+### Hoogdoorlaatfilter
+Het passieve hoogdoorlaatfilter heeft een -3dB-frequentie van 100 Hz en verwijdert de DC-offset van 0,8 V die door de microfoon wordt geleverd. Er wordt slechts rekening gehouden met 1 wisseling van de geluidsgolf. Dit vermindert de kosten van de componenten en verhoogt de stabiliteit van de schakeling.
 
-### Low pass filter
-A Sallen-Key low pass filter is dimensioned with a -3dB-frequency of 8 kHz to reduce the amplitude of the unwanted ultrasonic sounds. An amplification of 2.73 dB amplifies the signal to an amplitude which is appropriate for the ADC.
+### Versterker
+Een niet-inverterende versterker is gedimensioneerd om het signaal met 30 dB te versterken. Een TLV341 wordt gebruikt als operationele versterker omdat zijn bandbreedte produkt van 2.3 MHz vrij hoog is. De ruststroom meet ongeveer 70 µA per kanaal.
 
-### Bias voltage
-A stable bias voltage of 1.5 V is generated and is used as a DC offset for the audio signal. We hereby offset any negative voltages that we wouldn't be able to measure with the ADC.
+### Laagdoorlaatfilter
+Een Sallen-Key laagdoorlaatfilter is gedimensioneerd met een -3dB-frequentie van 8 kHz om de amplitude van de ongewenste ultrasonische geluiden te verminderen. Een versterking van 2,73 dB versterkt het signaal tot een amplitude die geschikt is voor de ADC.
 
-### Analog-to-digital converter
-The 12 bit ADC of the PIC16F18446 samples the analog signal to 16-bit values with a sample frequency of 20 kHz. The ADC measures the peak to peak value of the amplified audio signal. The PIC16F18446 will sample 1000 values to make sure the max value is approximated as close as possible to the real signal originating from the analog circuit. Whenever a threshold-value is exceeded, an interrupt will inform the motherboard that a dB value is ready.
+### Bias-spanning
+Een stabiele biasspanning van 1,5 V wordt opgewekt en wordt gebruikt als DC-offset voor het audiosignaal. Hiermee compenseren we eventuele negatieve spanningen die we met de ADC niet zouden kunnen meten.
 
-### Communication
-The microphone module communicates with the motherboard via I2C-commands to set the threshold value or timing interval.
+### Analoog-digitaal omzetter
+De 12-bit ADC van de PIC16F18446 bemonstert het analoge signaal naar 16-bit waarden met een samplefrequentie van 20 kHz. De ADC meet de piek-tot-piek waarde van het versterkte audiosignaal. De PIC16F18446 bemonstert 1000 waarden om er zeker van te zijn dat de maximumwaarde zo dicht mogelijk het echte signaal benadert dat uit het analoge circuit komt. Telkens wanneer een drempelwaarde wordt overschreden, zal een interrupt het moederbord informeren dat een dB-waarde klaar is.
+
+### Communicatie
+De microfoonmodule communiceert met het moederbord via I2C-commando's om de drempelwaarde of het tijdsinterval in te stellen.
