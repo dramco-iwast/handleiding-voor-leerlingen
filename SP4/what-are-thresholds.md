@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Communicatie o.b.v. drempelwaarden
-parent: Configuration
+parent: Configuratie
 grand_parent: SP 4 Onderzoeksopzet 
 nav_order: 3
 ---

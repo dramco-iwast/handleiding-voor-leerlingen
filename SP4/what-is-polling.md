@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Periodieke communicatie
-parent: Configuration
+parent: Configuratie
 grand_parent: SP 4 Onderzoeksopzet
 nav_order: 2
 ---

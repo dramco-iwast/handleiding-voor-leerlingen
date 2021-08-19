@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Environmental Sensor
+title: Omgevingssensor
 parent: Sensoren
 grand_parent: SP 2 Randvoorwaarden IoT systeem
 nav_order: 1
