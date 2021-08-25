@@ -46,7 +46,6 @@ Verlichtingssterkte is een maat voor de hoeveelheid invallend licht die een bepa
 
 De powermodule maakt gebruik van een Lithium Polymeer (LiPo) batterij die kan worden gebruikt om het hele systeem van stroom te voorzien. Door de chemische samenstelling van de batterij is de spanning niet lineair gerelateerd aan de resterende capaciteit, maar de batterijspanning kan wel een goede indicatie geven van de laadtoestand. Een meting wordt aangegeven door een blauw lampje.
 
-
 ## Toepassingen
 - Bewaking van weersomstandigheden
 	* bv. signalering wanneer de zon schijnt / wanneer het bewolkt is
