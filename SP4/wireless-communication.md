@@ -44,12 +44,3 @@ Raadpleeg voor meer informatie de [TTN documentatie](https://www.thethingsnetwor
 
 ### Beleid inzake eerlijke toegang
 Bovenop de duty cycle limitatie, wordt de totale air time (d.w.z. hoe lang we berichten verzenden) beperkt tot 30 seconden per dag om de load op de gateways van de TTN te verlagen. 
-
-## LoRaWAN Gateway
-In het geval dat er geen dekking is door het TTN, zullen wij een LoRaWAN Gateway beschikbaar stellen.
-
-### Netwerk toegang
-Om de gateway te kunnen gebruiken, moet de firewall TCP communicatie over poort 1700 van en naar `router.eu.thethings.network` toestaan.
-
-- TCP poort: `1700` (omhoog/omlaag)
-- Bestemming: `router.eu.thethings.network`
