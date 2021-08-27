@@ -55,5 +55,5 @@ Bovendien zijn die hele lage en hele hoge frequenties vaak niet nuttig voor de m
 
 In dit project zal men op 2 manieren de geluidsintensiteit kunnen opvragen. 
 Enerzijds zal het mogelijk zijn om aan de hand van polling de geluidsintensiteit op te vragen. 
-[Polling](../Configuration/what-is-polling.html) betekent dat het geluid gemeten wordt op het moment dat het gevraagd wordt. 
-Anderzijds is het ook mogelijk om een [drempelwaarde](../Configuration/what-are-thresholds.html) in te stellen vanaf dewelke er een melding moet komen dat deze drempelwaarde overschreden wordt. 
+[Polling](./../../SP4/what-is-polling.html) betekent dat het geluid gemeten wordt op het moment dat het gevraagd wordt. 
+Anderzijds is het ook mogelijk om een [drempelwaarde](./../../SP4/what-are-thresholds.html) in te stellen vanaf dewelke er een melding moet komen dat deze drempelwaarde overschreden wordt. 

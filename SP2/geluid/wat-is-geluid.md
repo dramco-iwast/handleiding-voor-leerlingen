@@ -56,17 +56,14 @@ Daarom wordt een nieuwe grootheid ingevoerd: de *geluidssterkte* met als eenheid
 De geluidssterkte L<sub>p</sub> wordt bepaald als het logaritme van de verhouding van de intensiteit I<sub>p</sub> van het geluid ten opzichte van de gehoorgrens 
 I<sub>0</sub> = 10<sup>-12</sup> W/m<sup>2</sup>: 
 
-$$ L_p = 10\cdot log \bigg(\frac{I_p}{I_0}\bigg) $$
+\\[\ L_p = 10\cdot log \bigg(\frac{I_p}{I_0}\bigg) \\]
 
 Van zodra men start met het refereren van een geluidsniveau ten opzichte van de gehoorgrens spreekt men ook van dB<sub>SPL</sub> (Sound Pressure Level). 
 De vergelijking hieronder wordt ook frequent gehanteerd om de geluidssterkte te beschrijven aan de hand van drukken 
-waarbij p<sub>0</sub> ook wel de referentiedruk wordt genoemd en 20 $\mu$Pa bedraagt.
+waarbij p<sub>0</sub> ook wel de referentiedruk wordt genoemd en 20 &#956Pa bedraagt.
 
-$$
-\begin{equation}\label{eq:dbp}
-L_p = 20 \cdot log \bigg(\frac{p}{p_0}\bigg)
-\end{equation}
-$$
+
+\\[\ L_p = 20 \cdot log \bigg(\frac{p}{p_0}\bigg)\\]
 
 In de tabel hieronder zijn enkele typische geluidssterktes voor verschillende activiteiten weergegeven.
 
@@ -94,11 +91,10 @@ De *toonhoogte* van een geluid wordt bepaald door de frequentiecomponenten die a
 
 De trilling hierboven (links) is een harmonische trilling, die als een sinusvormig signaal voorgesteld wordt en met als functievoorschrift 
 
-\begin{equation*}
-y(t) = A \sin(2\pi f t).
-\end{equation*}
+\\[\
+y(t) = A \sin(2\pi f t) \\]
 
-- Links is de trilling voorgesteld in het tijdsdomein: de uitwijking in functie van de tijd is een sinuso\"idaal verloop. 
+- Links is de trilling voorgesteld in het tijdsdomein: de uitwijking in functie van de tijd is een sinusoïdaal verloop. 
 - Rechts is de trilling voorgesteld in het frequentiedomein. 
 Deze voorstelling noemen we dan ook het *frequentiespectrum*. 
 De frequentie van een trilling is gedefinieerd als het aantal trillingen per seconde. 
@@ -112,9 +108,8 @@ Naast zuivere tonen bestaan ook samengestelde tonen. De meeste geluiden die je k
 
 Het functievoorschrift van de afgebeelde trilling is 
 
-\begin{equation*}
-y(t) = 0.5 \sin(2 \pi 10 t) + 1 \sin(2 \pi 20 t) + 1 \sin(2 \pi 30 t).
-\end{equation*}
+\\[\
+y(t) = 0.5 \sin(2 \pi 10 t) + 1 \sin(2 \pi 20 t) + 1 \sin(2 \pi 30 t)\\]
 
 De amplitude en frequentie van de samengestelde toon kan je uit het functievoorschrift afleiden: 
 A<sub>1</sub> = 0.5$, f<sub>1</sub> = 10 Hz, A<sub>2</sub> = 1, f<sub>2</sub> = 20 Hz, A<sub>3</sub> = 1 en f<sub>3</sub> = 30 Hz. 
@@ -135,9 +130,9 @@ Dit drukt de intensiteit van de verschillende frequentiecomponenten uit die aanw
 Het menselijk ook is gevoelig voor frequenties van 20 Hz tot 20 kHz. 
 Naarmate men ouder wordt, wordt het oor ongevoeliger voor hoge frequenties waardoor deze stiller of niet ervaren zullen worden.
 
-\todo{Zo een grijze kolom met: Test jouw eigen gehoor. Tot welke frequentie kan jij horen?}
+<!---\todo{Zo een grijze kolom met: Test jouw eigen gehoor. Tot welke frequentie kan jij horen?}--->
 
-De gevoeligheid van het gemiddeld menselijk oor is afgebeeld in Figuur \ref{fig:Afilter}. 
+De gevoeligheid van het gemiddeld menselijk oor is afgebeeld onderstaande figuur. 
 Uit deze grafiek kan men afleiden dat zowel de lage bastonen als de hoge pieptonen verzwakt worden waargenomen. 
 <!---
 % In heel wat meetapparatuur wordt een filter verwerkt zodat de meetapparatuur de geluidssterkte opmeet die de mens zou ervaren en niet de werkelijke fysische intensiteit.
@@ -158,12 +153,9 @@ Die versnelling zorgt onvermijdelijk voor wrijving.
 Wrijving is een vorm van energieverlies, wat leidt tot een verzwakt geluid.
 Ten tweede is er het effect van *divergentie*. 
 Dat betekent dat het vermogen van een geluidsgolf uitgespreid wordt over een groter oppervlak naarmate deze geluidsgolf zich verder van de bron bevindt. 
-In Vergelijking~\ref{eq:div} wordt de verzwakking van de amplitude van een geluidsgolf berekend in functie van de afstand.
-
-
-\begin{equation}\label{eq:div}
-D_{div} = 20 \cdot log\bigg(\frac{d}{d_0}\bigg) + 11 ~ \text{dB}
-\end{equation}
+In de vergelijking hieronder wordt de verzwakking van de amplitude van een geluidsgolf berekend in functie van de afstand.
+ \\[\
+D_{div} = 20 \cdot log\bigg(\frac{d}{d_0}\bigg) + 11 ~ \text{dB} \\]
 
 Hierbij is
 - D<sub>div</sub>: de verzwakking ten opzichte van een geluid waargenomen op de referentieafstand

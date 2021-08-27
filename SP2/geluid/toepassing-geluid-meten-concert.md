@@ -55,15 +55,15 @@ Hiervoor moet je weten wat het toegestane geluidsniveau is!
 -- Voor interrupt-gebaseerde communicatie: welke drempelwaarde wil je gebruiken? 
 Mogelijks moet je hier een correctie invoeren voor de verzwakking die optreedt omwille van de afstand tussen de *geluidsbron* en de *sensor*.
 In een multipad omgeving moet je mogelijks nog extra corrigeren, maar dit moet je onderzoeken voor de concrete ruimte waarin je het geluidsniveau wilt testen.
-- Open de configuratie-tool en volg de stappen [hier](../Configuration/configuration-tool.html).
+- Open de configuratie-tool en volg de stappen [hier](./../../SP4/configuration-tool.html).
 - Installeer het moederbord en de geluidssensor op een geschikte plek (dicht genoeg bij de geluidsbron). 
 Maak indien nodig de set-up waterdicht.
 
 ### Geluidsinformatie opmeten met IWAST
 
-Ga naar het [webplatform](../Platform/platform.html) en download de data.
+Ga naar het [webplatform](./../../SP5/Platform/platform.html) en download de data.
 
 ### IWAST data analyseren om geluidsoverlast vast te stellen
 
 Analyseer de data met een computerprogramma naar keuze.
-Documentatie voor analyse in Excel en Python vind je [hier](../Data Manipulation/data-manipulation.md).
+Documentatie voor analyse in Excel en Python vind je [hier](./../../SP5/analyse.md).

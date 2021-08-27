@@ -3,7 +3,7 @@ layout: default
 title: Verdieping geluid
 has_children: true
 parent: SP 2 Randvoorwaarden IoT systeem
-nav_order: 1
+nav_order: 3
 has_toc: true
 ---
 
