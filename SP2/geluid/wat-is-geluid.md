@@ -156,6 +156,7 @@ Dat betekent dat het vermogen van een geluidsgolf uitgespreid wordt over een gro
 In de vergelijking hieronder wordt de verzwakking van de amplitude van een geluidsgolf berekend in functie van de afstand.
  \\[\
 D_{div} = 20 \cdot log\bigg(\frac{d}{d_0}\bigg) + 11 ~ \text{dB} \\]
+[](<img src="https://latex.codecogs.com/svg.image?D_{div}=20\cdot&space;log(\frac{d}{d_0})&plus;11" title="D_{div}=20\cdot log(\frac{d}{d_0})+11" />)
 
 Hierbij is
 - D<sub>div</sub>: de verzwakking ten opzichte van een geluid waargenomen op de referentieafstand
