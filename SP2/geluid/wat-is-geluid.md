@@ -56,7 +56,6 @@ Daarom wordt een nieuwe grootheid ingevoerd: de *geluidssterkte* met als eenheid
 De geluidssterkte L<sub>p</sub> wordt bepaald als het logaritme van de verhouding van de intensiteit I<sub>p</sub> van het geluid ten opzichte van de gehoorgrens 
 I<sub>0</sub> = 10<sup>-12</sup> W/m<sup>2</sup>: 
 
-\\[\ L_p = 10\cdot log \bigg(\frac{I_p}{I_0}\bigg) \\]
 ![](https://latex.codecogs.com/svg.image?L_p=10\cdot&space;log\left&space;(&space;&space;\frac{I}{I_0}\right&space;))
 
 Van zodra men start met het refereren van een geluidsniveau ten opzichte van de gehoorgrens spreekt men ook van dB<sub>SPL</sub> (Sound Pressure Level). 
