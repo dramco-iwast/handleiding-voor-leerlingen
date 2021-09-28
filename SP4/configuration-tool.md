@@ -37,9 +37,9 @@ Als je de data van je sensor NIET periodisch wilt opvragen (GEEN polling), laat 
 Als je de data van je sensor WEL periodisch wilt opvragen (WEL polling), stel het polling interval dan in op het gewenste aantal minuten.
 We raden aan het polling interval in te stellen op minimum 10 minuten.
 
-Als je de data van je sensor via interrupt-gebaseerde communicatie wilt opvragen, betekent dit dat ALLE sensordata doorgestuurd wordt wanneer een bepaalde drempelwaarde overschreden wordt.
+(g) Als je de data van je sensor via interrupt-gebaseerde communicatie wilt opvragen, betekent dit dat ALLE sensordata doorgestuurd wordt wanneer een bepaalde drempelwaarde overschreden wordt.
 Zo kan je bijvoorbeeld alle gegevens (temperatuur, luchtdruk, luchtvochtigheid en algemene luchtkwaliteit) van de luchtkwaliteitsensor opvragen van zodra de temperatuur hoger wordt dan 25 &deg;C.
-Om dit te bereiken moet je bij 'Temperature &deg;C' threshold aanvinken, `TH` instellen op 25 en `TL` op een waarde hoger dan 25, bv 100 (g). 
+Om dit te bereiken moet je bij 'Temperature &deg;C' threshold aanvinken, `TH` instellen op 25&deg;C en `TL` op een waarde hoger dan 25&deg;C, bv 100 &deg;C. 
 Zo zal je de sensordata krijgen, elke keer als de temperatuur hoger wordt dan 25 &deg;C.
 
 Bij sensoren die meerdere fysische grootheden meten, bv de luchtkwaliteitsensor, kan je voor meerdere fysische grootheden drempelwaarden instellen.
@@ -47,7 +47,7 @@ Merk op dat alle sensorgegevens worden doorgestuurd wanneer 1 drempelwaarde over
 Stel dat je een drempel ingesteld hebt voor de temperatuur (doorsturen als temperatuur > 25 &deg;C) en luchtdruk (doorsturen als druk > 1060 hPa).
 Als nu de drempelwaarde voor de temperatuur overschreden wordt, maar die voor druk niet, (of omgekeerd), dan worden toch alle gegevens (temperatuur, luchtdruk, luchtvochtigheid en algemene luchtkwaliteit) doorgestuurd.
 
-* Het is aan te raden om gebruik te maken van data accumulatie (k). De data wordt hierbij gebufferd aan de zender en er wordt slechts een bericht uitgestuurd wanneer genoeg data verzameld is. 
+* __Het is aan te raden om gebruik te maken van data accumulatie__ (k). De data wordt hierbij gebufferd aan de zender en er wordt slechts een bericht uitgestuurd wanneer genoeg data verzameld is. 
 Het systeem wordt hierdoor stabieler en verbruikt minder energie. 
 Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online platform.
 
@@ -56,15 +56,15 @@ Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online 
 * Je krijgt wat info te zien in het vakje onderaan (i), maar daar hoef je je normaal gezien niets van aan te trekken.
 
 * Nu moet je alleen nog op de knop 'disconnect' onderaan drukken om alle instellingen permanent op te slaan (j).
-Als je niet op 'disconnect' klikt, worden de instellingen NIET opgeslagen.
+__Als je niet op 'disconnect' klikt, worden de instellingen NIET opgeslagen.__
 Nu mag je de USB connectie met het moederbord loskoppelen.
 
 
 * Door op `Power Report` (l) te klikken verkrijg je een gedetailleerd overzicht van het vermogenverbruik van de sensor. 
 
-* De huidige configuratie wordt weergegeven (m). J
+* De huidige configuratie wordt weergegeven (m). 
 
-* e kan het aantal verwachte events boven en onder de thresholds instellen (n) alsook de draadloze communicatie instellingen (o). 
+* Je kan het aantal verwachte events boven en onder de thresholds instellen (n) alsook de draadloze communicatie instellingen (o). 
 
 * Aan de hand van de aangesloten sensoren en deze instellingen wordt het gemiddeld vermogenverbruik (p) berekend alsook de geschatte autonomie (q). 
 

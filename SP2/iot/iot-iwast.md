@@ -26,7 +26,7 @@ De communicatie is dus _eenzijdig_: de sensormodules kunnen gegevens uitsturen, 
 (Dus bv. een deur openen of een lichtje doen branden als een drukknop ingedrukt wordt, is voorlopig niet mogelijk).
 
 __Let op!__ Het huidige systeem is niet regenwaterdicht. Je mag de sensoren dus niet onbeschermd buiten plaatsen. Indien je graag in de buitenlucht meetgegevens zou verzamelen, plaats de IoT 
-opstelling dan onder een afdak, of bouw een opstelling om de IoT opstelling tegen weersinvloeden te beschermen. Neem contact op met iwast@kuleuven.be als je twijfelt aan de wind- en 
+opstelling dan onder een afdak, of bouw een opstelling om de IoT opstelling tegen weersinvloeden te beschermen. Neem contact op met iwast@dramco.be als je twijfelt aan de wind- en 
 waterdichtheid van je opstelling!
 
 # Draadloze communicatietechniek

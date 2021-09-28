@@ -2,8 +2,8 @@
 layout: default
 title: Draadloze communicatie
 has_children: true
-parent: SP 4 Onderzoeksopzet
-nav_order: 3
+parent: SP 2 Randvoorwaarden IoT systeem
+nav_order: 5
 has_toc: true
 ---
 
