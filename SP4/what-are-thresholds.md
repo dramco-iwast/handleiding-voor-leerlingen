@@ -38,7 +38,7 @@ In de tabel hieronder vindt u de minimum en maximum waarden die `TL` en `TH` kun
 
 | Sensor type | Fysieke hoeveelheid | minimum | maximum |
 | ------------- |:-------------:|:-------------:|:-------------:| 
-| Geluidsniveau sensor | Geluidsniveau (dB) | 65 | 120 |
+| Geluidsniveau sensor | Geluidsniveau (dB) | 65 | 109 |
 | Omgevingssensor | Temperatuur (&deg;C) | -40 | 100 |
 | Omgevingssensor | Luchtdruk (hPa) | 0 | 65000 |
 | Milieusensor | Vochtigheid (%) | 0 | 100 |
@@ -49,3 +49,5 @@ In de tabel hieronder vindt u de minimum en maximum waarden die `TL` en `TH` kun
 
 __Pas op!__ Door de manier waarop geluidsniveaus worden berekend, is het gemeten geluidsniveau altijd ten minste 50 dB. Daarom heeft het geen zin om te proberen 'stille' geluiden te meten.
 Het is ook niet toegestaan om drempels lager dan 65 dB in te stellen, omdat dit zal leiden tot constante datatransmissie, wat veel stroom verbruikt en de batterij leeg zal trekken.
+
+__Pas op!__ De lage drempel (T_L) is niet actief voor de geluidsensor.

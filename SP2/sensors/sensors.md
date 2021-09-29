@@ -33,7 +33,7 @@ In de tabel hieronder vindt u de minimum en maximum waarden die `TL` en `TH` kun
 
 | Sensor type | Fysieke grootheid | minimum | maximum |
 | ------------- |:-------------:|:-------------:|:-------------:| 
-| Geluidsniveau sensor | Geluidsniveau (dB) | 65 | 120 |
+| Geluidsniveau sensor | Geluidsniveau (dB) | 65 | 109 |
 | Omgevingssensor | Temperatuur (&deg;C) | -40 | 100 |
 | Omgevingssensor | Luchtdruk (hPa) | 0 | 65000 |
 | Milieusensor | Vochtigheid (%) 0 | 100 |

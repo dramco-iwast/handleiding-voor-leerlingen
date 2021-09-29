@@ -47,6 +47,8 @@ Merk op dat alle sensorgegevens worden doorgestuurd wanneer 1 drempelwaarde over
 Stel dat je een drempel ingesteld hebt voor de temperatuur (doorsturen als temperatuur > 25 &deg;C) en luchtdruk (doorsturen als druk > 1060 hPa).
 Als nu de drempelwaarde voor de temperatuur overschreden wordt, maar die voor druk niet, (of omgekeerd), dan worden toch alle gegevens (temperatuur, luchtdruk, luchtvochtigheid en algemene luchtkwaliteit) doorgestuurd.
 
+__Pas op!__ De lage drempel (T_L) is niet actief voor de geluidsensor.
+
 * __Het is aan te raden om gebruik te maken van data accumulatie__ (k). De data wordt hierbij gebufferd aan de zender en er wordt slechts een bericht uitgestuurd wanneer genoeg data verzameld is. 
 Het systeem wordt hierdoor stabieler en verbruikt minder energie. 
 Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online platform.
