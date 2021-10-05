@@ -9,18 +9,29 @@ nav_order: 1
 De configuratie-tool kan je downloaden via [https://github.com/dramco-iwast/qt-config/releases](https://github.com/dramco-iwast/qt-config/releases). 
 Wanneer je het `IWAST.Configurator.V2.1Setup.exe` bestand opent, installeert de tool vanzelf op je computer.
 
-Hieronder zie je een screenshot van de configuratie-tool. Voer de aangeduide stappen in volgorde uit ((a) tot (u)).
+Eerst nog wat uitleg over het moederbord. Op het moederbord zie je een grote ronde knop. Deze knop heeft verschillende doeleinden:
+* tijdens de configuratie: reset-knop. Dit zorgt ervoor dat je het moederbord kan detecteren om het vervolgens te configureren
+* tijdens gebruik van de IoT sensoren: feedback. 
+    * Als de grote ronde knop oplicht, probeert het moederbord data van de sensoren draadloos door te sturen naar de cloud. 
+    * Als het moederbord data verstuurd heeft, gaat het het lampje uit. Als het lampje continu oplicht, heeft het problemen om de data verstuurd te krijgen. 
+        * Mogelijks heb te [teveel data verstuurd](./../SP2/iot/wireless-communication.md) en mag je even geen gebruik maken van het draadloze netwerk. In dat geval moet je wachten tot je weer toegang tot het netwerk krijgt. 
+        * Een andere optie is dat er gewoon geen netwerk aanwezig is. Vraag je leerkracht om de controleren of de ontvanger operationeel is. Indien dat het geval is, moet je mogelijks dichter bij de ontvanger blijven met het moederbord.
+
+Hieronder zie je een screenshot van de configuratie-tool. Voer de aangeduide stappen in volgorde uit ((a) tot (u)), zoals hieronder beschreven.
 
 ![](../assets/images/config-tool-fig.png)
 
+* Sluit de sensoren, uitgezonderd de vermogenmodule, aan op het moederbord. 
+* Sluit als laatste de vermogenmodule aan.
+* Plug de USB-kabel in in de computer.
+* __Druk op de grote ronde 'reset' knop op het moederbord.__
+
 * De aangesloten USB apparaten zie je rechtsboven (a).
-Sluit het moederbord, samen met de sensoren die je wilt configureren via USB aan je computer aan. 
-__Druk op de grote ronde 'reset' knop op het moederbord.__
 
 * Vernieuw indien nodig het lijstje van USB apparaten door op 'refresh' te drukken (b).
 Als je net het moederbord hebt aangesloten, zie je in het lijstje van USB apparaten nu wellicht een nieuwe COM-poort verschijnen. 
 Dit is het nummer van de USB-poort waarop je je moederbord hebt aangesloten.
-__Indien je de nieuwe COM-poort niet ziet verschijnen, heb je wellicht niet op de grote ronde 'reset' knop geduwd. Sluit het moederbord opnieuw aan door de USB-kabel uit te trekken en opnieuw in de USB-poort te steken en druk op de grote ronde 'reset' knop op het moederbord.__
+__Indien je de nieuwe COM-poort niet ziet verschijnen, heb je wellicht niet op de grote ronde 'reset' knop geduwd. Sluit het moederbord opnieuw aan: (1) trek de USB-kabel uit, (2) sluit de vermogenmodule opnieuw aan, (3) steek de USB-kabel opnieuw in, en (4) druk op de grote ronde 'reset' knop op het moederbord.__
 
 * Selecteer het USB apparaat naar keuze (de COM-poort waarop je moederbord is aangesloten) en druk op connect (c).
 
@@ -61,6 +72,7 @@ Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online 
 __Als je niet op 'disconnect' klikt, worden de instellingen NIET opgeslagen.__
 Nu mag je de USB connectie met het moederbord loskoppelen.
 
+__Pas op! Nadat je een combinatie van moederbord en sensormodules geconfigureerd hebt, moet je die behouden en mag je die niet opnieuw losmaken. Indien je sensormodules losmaakt losmaakt, of nieuwe sensormodules op je moederbord aansluit, moet je de hele boel opnieuw configureren!__
 
 * Door op `Power Report` (l) te klikken verkrijg je een gedetailleerd overzicht van het vermogenverbruik van de sensor. 
 

@@ -14,7 +14,10 @@ has_toc: true
 De drukknopsensor bevat vier knoppen.
 Telkens wanneer een knop wordt ingedrukt, stuurt het moederbord een bericht naar de cloud waarin wordt gespecificeerd welke knop werd ingedrukt.
 
-Het nummer van de knop kan je zien op het bordje. Het drukknopnummer is aangegeven met U1, U2, U3 en U4, zoals te zien is in onderstaande figuur. In het platform (dashboard) zie je het drukknopnummer bovenaan de grafiek.
+Het nummer van de knop kan je zien op het bordje. Het drukknopnummer is aangegeven met U1, U2, U3 en U4, zoals te zien is in onderstaande figuur. In het [platform (dashboard)](./../../SP5/Platform/platform.md) zie je het drukknopnummer (hier aangeduid met SW1 tot SW4) bovenaan de grafiek.
+
+![](./../../assets/images/button-sensor-name.jpg)
+![](./../../assets/images/button-platform.jpg)
 
 Deze sensor hoeft niet te worden geconfigureerd.
 

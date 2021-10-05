@@ -18,7 +18,7 @@ has_toc: true
 ## Sensorgegevens lezen
 Er zijn twee benaderingen om sensorgegevens te lezen.
 
-Tijdens de configuratie kunt u kiezen voor [polling](./../../SP4/what-is-polling.md) en/of [interrupt-gebaseerde](./../SP4/what-are-thresholds.md) communicatie.
+Tijdens de configuratie kunt u kiezen voor [polling](./../../SP4/what-is-polling.md) en/of [interrupt-gebaseerde](./../../SP4/what-are-thresholds.md) communicatie.
 De eerste wordt gebruikt wanneer u periodiek gegevens van het sensorbord wilt ophalen.
 De laatste kan worden gebruikt wanneer u alleen wilt weten of de meting van belang boven of onder een vooraf ingestelde drempelwaarde ligt.
 

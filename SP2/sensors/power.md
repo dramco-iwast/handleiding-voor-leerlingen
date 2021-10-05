@@ -23,6 +23,8 @@ De module omvat een fotovoltaïsch paneel met een MPPT-algoritme om op efficiën
 Wanneer de batterij uiteindelijk toch leeg raakt, wordt deze automatisch losgekoppeld van het systeem. 
 De batterij kan ook via USB worden opgeladen. Bij het inpluggen via USB gaan een groen en rood lampje branden. Het opladen is voltooid wanneer het rode lampje uitgaat en alleen het groene lampje blijft branden.
 
+__Let op! De batterij laadt niet op als de vermogenmodule via het moederbord aan een laptop is aangesloten.__ De batterij laadt enkel op via het zonnepaneel (traag) of wanneer de vermogenmodule rechtstreeks via USB is aangesloten aan een laptop of adapter (sneller).
+
 ## Meten van invallend licht
 Deze module bevat een LDR (Light Dependent Resistor) waarvan de uitgangspanning wordt omgezet in een verlichtingssterkte. Een meting wordt aangegeven door een blauw lampje.
 

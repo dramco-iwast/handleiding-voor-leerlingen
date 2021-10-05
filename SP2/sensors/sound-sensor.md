@@ -23,6 +23,8 @@ Daarom heeft het geen zin om te proberen "stille" geluiden te meten.
 Het is ook niet toegestaan drempels lager dan 65 dB in te stellen, omdat dit zal leiden tot constante datatransmissie, wat veel stroom verbruikt en de batterij leeg zal trekken. 
 Het is ook zinvol om tamelijk 'hoge' drempelwaarden te gebruiken, omdat thresholding vooral nuttig is om te detecteren wanneer vooraf ingestelde hoge geluidsniveaus zijn overschreden.
 
+__Pas op!__ De lage drempel (T_L) is niet actief voor de geluidsensor.
+
 ## Toepassingen:
 - Bewaking van geluidsniveaus en/of 'geluidsvervuiling'
 	* bv. bewaking van geluid op de speelplaats
