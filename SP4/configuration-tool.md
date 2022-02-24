@@ -38,22 +38,23 @@ Hieronder zie je een screenshot van de configuratie-tool. Voer de aangeduide sta
 
 ![](../assets/images/setup-config.gif)
 
-1. Vernieuw indien nodig het lijstje van USB apparaten door op 'refresh' te drukken (b).
+{:start="5"}
+5. Vernieuw indien nodig het lijstje van USB apparaten door op 'refresh' te drukken (b).
 Als je net het moederbord hebt aangesloten, zie je in het lijstje van USB apparaten nu wellicht een nieuwe COM-poort verschijnen. 
 Dit is het nummer van de USB-poort waarop je je moederbord hebt aangesloten.
 __Indien je de nieuwe COM-poort niet ziet verschijnen, heb je wellicht niet op de grote ronde 'reset' knop geduwd. Druk op de grote ronde 'reset' knop op het moederbord.__
 
-2. Selecteer het USB apparaat (de COM-poort waarop je moederbord is aangesloten) en druk op connect (c).
+6. Selecteer het USB apparaat (de COM-poort waarop je moederbord is aangesloten) en druk op connect (c).
 
 
 ### Sensor(en) instellen
-
-3. Daarna moeten de sensoren die aan je moederbord geconnecteerd zijn in het lijstje (d) verschijnen. 
+{:start="7"}
+7. Daarna moeten de sensoren die aan je moederbord geconnecteerd zijn in het lijstje (d) verschijnen. 
 Selecteer de sensor die je wilt configureren. 
 
-4. Klik vervolgens op 'load' om de huidige configuratie (instellingen) van de sensor te bekijken (e).
+8. Klik vervolgens op 'load' om de huidige configuratie (instellingen) van de sensor te bekijken (e).
 
-5. Pas de instellingen aan indien nodig. 
+9. Pas de instellingen aan indien nodig. 
 Bepaal ten eerste of je wilt werken via periodische of drempel-gebaseerde communicatie, of of je beide wilt combineren.
 Meer info over periodische communicatie vind je [hier](what-is-polling.html) en over drempel-gebaseerde communicatie [hier](what-are-thresholds).
 
@@ -78,20 +79,20 @@ Het systeem wordt hierdoor stabieler en verbruikt minder energie.
 Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online platform.   -->
 **Opgelet** data accumulatie wordt momenteel nog niet ondersteund. We houden je op de hoogte wanneer de implmentatie hiervan klaar is.
 
-5. Als je tevreden bent over de instellingen voor je sensor, sla je de configuratie op (h). 
+10. Als je tevreden bent over de instellingen voor je sensor, sla je de configuratie op (h). 
 
 * Je krijgt wat info te zien in het vakje onderaan (i), maar daar hoef je je normaal gezien niets van aan te trekken. Deze informatie kan gebruikt worden om door te sturen naar iwast@dramco.be bij problemen.
 
 
 ### Instellingen opslaan en moederbord loskoppelen
-
-6 . Nu moet je alleen nog op de knop 'disconnect' onderaan drukken om alle instellingen permanent op te slaan (j).
+{:start="11"}
+11 . Nu moet je alleen nog op de knop 'disconnect' onderaan drukken om alle instellingen permanent op te slaan (j).
 __Als je niet op 'disconnect' klikt, worden de instellingen NIET opgeslagen.__
 Nu mag je de USB connectie met het moederbord loskoppelen.
 
 __Pas op! Nadat je een combinatie van moederbord en sensormodules geconfigureerd hebt, moet je die behouden en mag je die niet opnieuw losmaken. Indien je sensormodules losmaakt, verwisseld, of nieuwe sensormodules op je moederbord aansluit, moet je de hele boel opnieuw configureren!__
 
-7. Stappen l t.e.m. u mag je negeren.
+12. Stappen l t.e.m. u mag je negeren.
 
 <!-- * Door op `Power Report` (l) te klikken verkrijg je een gedetailleerd overzicht van het vermogenverbruik van de sensor. 
 
