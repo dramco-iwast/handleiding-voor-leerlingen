@@ -21,19 +21,27 @@ Hieronder zie je een screenshot van de configuratie-tool. Voer de aangeduide sta
 
 ![](../assets/images/config-tool-fig.png)
 
+
 * Sluit de sensoren, uitgezonderd de vermogenmodule, aan op het moederbord. 
 * Sluit als laatste de vermogenmodule aan.
 * Plug de USB-kabel in in de computer.
 * __Druk op de grote ronde 'reset' knop op het moederbord.__
+* **Opgelet** het moederbord zal na het drukken op de reset knop, maar voor 30 seconden detecteerbaar zijn door de configuratietool, waarna deze in slaap valt om zo energie te besparen. Dit wil dus zeggen dat het bord geconnecteerd moet zijn met de tool (zie hieronder) binnen de 30 seconden.
+
+![](../assets/images/attach-sensors-config.gif)
+
 
 * De aangesloten USB apparaten zie je rechtsboven (a).
+
+![](../assets/images/setup-config.gif)
 
 * Vernieuw indien nodig het lijstje van USB apparaten door op 'refresh' te drukken (b).
 Als je net het moederbord hebt aangesloten, zie je in het lijstje van USB apparaten nu wellicht een nieuwe COM-poort verschijnen. 
 Dit is het nummer van de USB-poort waarop je je moederbord hebt aangesloten.
-__Indien je de nieuwe COM-poort niet ziet verschijnen, heb je wellicht niet op de grote ronde 'reset' knop geduwd. Sluit het moederbord opnieuw aan: (1) trek de USB-kabel uit, (2) sluit de vermogenmodule opnieuw aan, (3) steek de USB-kabel opnieuw in, en (4) druk op de grote ronde 'reset' knop op het moederbord.__
+__Indien je de nieuwe COM-poort niet ziet verschijnen, heb je wellicht niet op de grote ronde 'reset' knop geduwd. Druk op de grote ronde 'reset' knop op het moederbord.__
 
-* Selecteer het USB apparaat naar keuze (de COM-poort waarop je moederbord is aangesloten) en druk op connect (c).
+* Selecteer het USB apparaat (de COM-poort waarop je moederbord is aangesloten) en druk op connect (c).
+
 
 * Daarna moeten de sensoren die aan je moederbord geconnecteerd zijn in het lijstje (d) verschijnen. 
 Selecteer de sensor die je wilt configureren. 
@@ -60,9 +68,10 @@ Als nu de drempelwaarde voor de temperatuur overschreden wordt, maar die voor dr
 
 __Pas op!__ De lage drempel (T_L) is niet actief voor de geluidsensor.
 
-* __Het is aan te raden om gebruik te maken van data accumulatie__ (k). De data wordt hierbij gebufferd aan de zender en er wordt slechts een bericht uitgestuurd wanneer genoeg data verzameld is. 
+<!-- * __Het is aan te raden om gebruik te maken van data accumulatie__ (k). De data wordt hierbij gebufferd aan de zender en er wordt slechts een bericht uitgestuurd wanneer genoeg data verzameld is. 
 Het systeem wordt hierdoor stabieler en verbruikt minder energie. 
-Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online platform.
+Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online platform.   -->
+* **Opgelet** data accumulatie wordt momenteel nog niet ondersteund. We houden je op de hoogte wanneer de implmentatie hiervan klaar is.
 
 * Als je tevreden bent over de instellingen voor je sensor, sla je de configuratie op (h). 
 
