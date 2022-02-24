@@ -39,7 +39,7 @@ Hieronder zie je een screenshot van de configuratie-tool. Voer de aangeduide sta
 ![](../assets/images/setup-config.gif)
 
 {:start="5"}
-5. Vernieuw indien nodig het lijstje van USB apparaten door op 'refresh' te drukken (b).
+5 . Vernieuw indien nodig het lijstje van USB apparaten door op 'refresh' te drukken (b).
 Als je net het moederbord hebt aangesloten, zie je in het lijstje van USB apparaten nu wellicht een nieuwe COM-poort verschijnen. 
 Dit is het nummer van de USB-poort waarop je je moederbord hebt aangesloten.
 __Indien je de nieuwe COM-poort niet ziet verschijnen, heb je wellicht niet op de grote ronde 'reset' knop geduwd. Druk op de grote ronde 'reset' knop op het moederbord.__
@@ -49,7 +49,7 @@ __Indien je de nieuwe COM-poort niet ziet verschijnen, heb je wellicht niet op d
 
 ### Sensor(en) instellen
 {:start="7"}
-7. Daarna moeten de sensoren die aan je moederbord geconnecteerd zijn in het lijstje (d) verschijnen. 
+7 . Daarna moeten de sensoren die aan je moederbord geconnecteerd zijn in het lijstje (d) verschijnen. 
 Selecteer de sensor die je wilt configureren. 
 
 8. Klik vervolgens op 'load' om de huidige configuratie (instellingen) van de sensor te bekijken (e).
