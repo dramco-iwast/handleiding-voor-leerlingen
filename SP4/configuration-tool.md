@@ -25,8 +25,11 @@ Hieronder zie je een screenshot van de configuratie-tool. Voer de aangeduide sta
 ![](../assets/images/attach-sensors-config.gif)
 
 **1 .**  Sluit de sensoren, uitgezonderd de vermogenmodule, aan op het moederbord. 
+
 **2 .** Sluit als laatste de vermogenmodule aan.
+
 **3 .** Plug de USB-kabel in in de computer.
+
 **4 .** __Druk op de grote ronde 'reset' knop op het moederbord.__  **Opgelet** het moederbord zal na het drukken op de reset knop, maar voor 30 seconden detecteerbaar zijn door de configuratietool, waarna deze in slaap valt om zo energie te besparen. Dit wil dus zeggen dat het bord geconnecteerd moet zijn met de tool (zie hieronder) binnen de 30 seconden.
 
 
