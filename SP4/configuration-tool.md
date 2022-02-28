@@ -96,6 +96,10 @@ __Pas op! Nadat je een combinatie van moederbord en sensormodules geconfigureerd
 
 **12 .** Stappen l t.e.m. u mag je negeren.
 
+**13.** De micro-usb kabel mag worden uitgetrokken. **Opgelet** dit moet met zorg gebeuren. Dit wil zeggen dat je de kabel uitrekt met één vloeiende beweging zonder bruusk heen en weer te schudden. 
+
+![](../assets/images/unplug-cable.gif)
+
 <!-- * Door op `Power Report` (l) te klikken verkrijg je een gedetailleerd overzicht van het vermogenverbruik van de sensor. 
 
 * De huidige configuratie wordt weergegeven (m). 
