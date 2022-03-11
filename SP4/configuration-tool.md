@@ -76,10 +76,11 @@ Als nu de drempelwaarde voor de temperatuur overschreden wordt, maar die voor dr
 
 __Pas op!__ De lage drempel (T_L) is niet actief voor de geluidsensor.
 
-<!-- * __Het is aan te raden om gebruik te maken van data accumulatie__ (k). De data wordt hierbij gebufferd aan de zender en er wordt slechts een bericht uitgestuurd wanneer genoeg data verzameld is. 
+* __Het is aan te raden om gebruik te maken van data accumulatie__ (k). De data wordt hierbij gebufferd aan de zender en er wordt slechts een bericht uitgestuurd wanneer genoeg data verzameld is. 
 Het systeem wordt hierdoor stabieler en verbruikt minder energie. 
-Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online platform.   -->
-**Opgelet** data accumulatie wordt momenteel nog niet ondersteund. We houden je op de hoogte wanneer de implmentatie hiervan klaar is.
+Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online platform. Accumulatie staat aan _per default_ dus je hoeft hiervoor niets te ondernemen.
+
+<!-- _**Opgelet** data accumulatie wordt momenteel nog niet ondersteund. We houden je op de hoogte wanneer de implmentatie hiervan klaar is._ -->
 
 **10 .** Als je tevreden bent over de instellingen voor je sensor, sla je de configuratie op (h). 
 
@@ -92,7 +93,7 @@ Het kan hierdoor wel langer duren alvorens de eerste data toekomt in het online 
 __Als je niet op 'disconnect' klikt, worden de instellingen NIET opgeslagen.__
 Nu mag je de USB connectie met het moederbord loskoppelen.
 
-__Pas op! Nadat je een combinatie van moederbord en sensormodules geconfigureerd hebt, moet je die behouden en mag je die niet opnieuw losmaken. Indien je sensormodules losmaakt, verwisseld, of nieuwe sensormodules op je moederbord aansluit, moet je de hele boel opnieuw configureren!__
+__Pas op! Nadat je een combinatie van moederbord en sensormodules geconfigureerd hebt, moet je die behouden en mag je die niet opnieuw losmaken. Indien je sensormodules losmaakt, verwisseld, of nieuwe sensormodules op je moederbord aansluit, moet je de hele boel opnieuw configureren! Ook zal het dashboard telkens de combinatie sensor-moederbord weergeven. Dit wil zeggen als je een ander, maar hetzelfde type, sensor aansluit op het moederbord, dan zal er op het dashboard twee sensoren te zien zijn voor hetzelfde moederbord.__
 
 **12 .** Stappen l t.e.m. u mag je negeren.
 
